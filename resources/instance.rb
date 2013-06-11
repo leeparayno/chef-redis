@@ -54,11 +54,11 @@ attribute :zset_max_ziplist_entries,            :kind_of => Fixnum,             
 attribute :configure_zset_max_ziplist_value,    :kind_of => [TrueClass, FalseClass], :default => false
 attribute :zset_max_ziplist_value,              :kind_of => Fixnum,                  :default => 64
 
-attribute :configure_hash_max_ziplist_entries,  :kind_of => [TrueClass, FalseClass], :default => false
-attribute :hash_max_ziplist_entries,            :kind_of => Fixnum,                  :default => 512
+#attribute :configure_hash_max_ziplist_entries,  :kind_of => [TrueClass, FalseClass], :default => false
+#attribute :hash_max_ziplist_entries,            :kind_of => Fixnum,                  :default => 512
 
-attribute :configure_hash_max_ziplist_value,    :kind_of => [TrueClass, FalseClass], :default => false
-attribute :hash_max_ziplist_value,              :kind_of => Fixnum,                  :default => 64
+#attribute :configure_hash_max_ziplist_value,    :kind_of => [TrueClass, FalseClass], :default => false
+#attribute :hash_max_ziplist_value,              :kind_of => Fixnum,                  :default => 64
 
 def initialize(*args)
     super
@@ -95,8 +95,8 @@ state_attrs(
  :zset_max_ziplist_entries,
  :zset_max_ziplist_value,
 
- :hash_max_ziplist_entries,
- :hash_max_ziplist_value,
+ #:hash_max_ziplist_entries,
+ #:hash_max_ziplist_value,
 
  :set_max_intset_entries
 )

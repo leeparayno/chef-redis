@@ -9,6 +9,8 @@ redis_instance "server" do
   group         node.redis.group
 
   node.redis.config.each do |attribute, value|
-    send(attribute, value)
+  	if (attribute !~ /hash_max_zip/)
+      send(attribute, value)
+    end
   end
 end

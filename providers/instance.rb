@@ -21,8 +21,8 @@ def load_current_resource
   new_resource.configure_set_max_intset_entries
   new_resource.configure_zset_max_ziplist_entries
   new_resource.configure_zset_max_ziplist_value
-  new_resource.configure_hash_max_ziplist_entries
-  new_resource.configure_hash_max_ziplist_value
+  #new_resource.configure_hash_max_ziplist_entries
+  #new_resource.configure_hash_max_ziplist_value
   new_resource.conf_dir
 
   new_resource.state # Load attributes

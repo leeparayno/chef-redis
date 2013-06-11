@@ -61,11 +61,11 @@ default.redis.config.zset_max_ziplist_entries = 128
 default.redis.config.configure_zset_max_ziplist_value = false
 default.redis.config.zset_max_ziplist_value = 64
 
-default.redis.config.configure_hash_max_ziplist_entries = false
-default.redis.config.hash_max_ziplist_entries = 512
+#default.redis.config.configure_hash_max_ziplist_entries = false
+#default.redis.config.hash_max_ziplist_entries = 512
 
-default.redis.config.configure_hash_max_ziplist_value = false
-default.redis.config.hash_max_ziplist_value = 64
+#default.redis.config.configure_hash_max_ziplist_value = false
+#default.redis.config.hash_max_ziplist_value = 64
 
 # replication
 default.redis.replication.enabled = false
